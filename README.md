@@ -1,4 +1,4 @@
-🚀 Soroban Milestone-Based Job Smart Contract
+Soroban Milestone-Based Job Smart Contract
 This smart contract is designed for a secure and decentralized job marketplace on Soroban, Stellar's smart contract platform. It enables trustless collaboration between Clients and Talents by enforcing milestone-based payments, fund locking, and a future-ready dispute resolution system.
 
 🛠️ Features Overview
