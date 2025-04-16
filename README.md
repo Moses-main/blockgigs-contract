@@ -1,92 +1,89 @@
-Soroban Milestone-Based Job Smart Contract
-This smart contract is designed for a secure and decentralized job marketplace on Soroban, Stellar's smart contract platform. It enables trustless collaboration between Clients and Talents by enforcing milestone-based payments, fund locking, and a future-ready dispute resolution system.
+# 💼 Soroban Job Marketplace Smart Contract
 
-🛠️ Features Overview
-✅ Milestone-based job creation
+A secure, milestone-based smart contract for job management and payments on **Soroban**, Stellar's smart contract platform.
 
-🔒 Upfront fund locking for trust
+This contract ensures:
 
-🤝 Talent selection and job linking
+- Funds are locked upfront
+- Payments are released automatically per milestone
+- A future-proof structure for dispute resolution
 
-🔁 Automated milestone payments
+---
 
-⚖️ (Planned) Dispute resolution mechanism
+## 📌 4.1 Job Creation & Fund Locking
 
-📌 4.1 Job Creation & Fund Locking
-1. Job Creation
-The Client creates a job and defines its milestones, where each milestone includes:
+### ✅ Job Creation
 
-A description of the task
+- The **Client** (employer) creates a job and defines a series of milestones.
+- Each milestone has a specific deliverable and a set **payment amount**.
 
-A payment amount tied to that milestone
+### 🔒 Fund Locking
 
-2. Fund Locking
-Upon job creation:
+- During job creation, the **full job budget** is locked into the smart contract.
+- This guarantees that the funds are available **before** the work starts, ensuring trust and preventing disputes or fraud.
 
-The full job budget is locked in the smart contract
+---
 
-Ensures payment availability before work begins
+## 🛠️ 4.2 Talent Selection & Work Submission
 
-Prevents fraud or disputes later on
+### 👥 Talent Selection
 
-📌 4.2 Talent Selection & Work Submission
-1. Talent Selection
-Talents (freelancers) can apply for listed jobs
+- A **Talent** (freelancer) applies for a job.
+- The **Client** selects a Talent, and the contract records the selection.
 
-Once selected, the Client assigns the Talent, and the smart contract binds them to the job
+### 📤 Work Submission
 
-2. Work Submission
-Talents submit completed milestones
+- The Talent completes the first milestone and submits their work for review.
 
-Work is submitted via the platform
+### ✔️ Client Approval
 
-3. Client Approval
-Client reviews the milestone
+- The Client reviews the work.
+- Upon approval, the smart contract is notified to release the associated milestone payment.
 
-If satisfied, the Client approves, and the smart contract initiates payment
+---
 
-📌 4.3 Milestone-Based Payment Release
-1. Automatic Payments
-Once a milestone is approved, the smart contract automatically releases the corresponding funds to the Talent
+## 💸 4.3 Milestone-Based Payment Release
 
-2. Final Payment
-Final milestone triggers the completion of the contract
+### ⚙️ Automatic Payments
 
-Full payment is made without manual intervention
+- Once a milestone is approved, the smart contract **automatically** sends the corresponding funds to the **Talent’s wallet**.
 
-3. Trustless Transfers
-Payments are fully automated
+### 🎯 Final Payment
 
-Neither party can interfere with the locked funds outside of the contract rules
+- The final milestone triggers the **last payment**, marking the job as complete.
 
-🧑‍⚖️ 4.4 Dispute Resolution (Coming Soon)
-1. Conflict Handling
-If there's a dispute (e.g., a Client refuses approval or Talent claims unfairness), a dispute process will be triggered
+### 🔐 Trustless System
 
-2. Arbitrator Role
-A third-party Arbitrator (DAO or trusted party) reviews the case
+- All payments are **automated**.
+- No manual transfers are needed after funds are locked—**both parties must follow contract rules**.
 
-Arbitrators are given temporary authority
+---
 
-3. Binding Decision
-The smart contract obeys the arbitrator’s ruling
+## 🛡️ 4.4 Dispute Resolution (Future Feature)
 
-Funds are either sent to the Talent or refunded to the Client
+### ⚖️ Conflict Resolution
 
-🔮 Future Enhancements
-DAO-based arbitration selection
+- If issues arise (e.g., a Client refuses approval or a Talent feels mistreated), a **dispute** can be triggered.
 
-On-chain feedback and review system
+### 🧑‍⚖️ Arbitrators
 
-Talent scoring and job ratings
+- Trusted **third-party arbitrators** (or DAO members) will review the situation and deliver a judgment.
 
-🛠️ Built With
-Soroban – Stellar's smart contract platform
+### 📜 Binding Decisions
 
-Rust – for writing performant and secure smart contracts
+- The smart contract will **follow the arbitrators’ verdict**—either releasing the funds to the Talent or returning them to the Client.
 
-Stellar SDK – for interacting with the blockchain
+---
 
-📬 Contributing
-Got suggestions or feature requests? Feel free to open an issue or fork the repo and make a pull request.
+## 🌐 Built On
 
+- [Soroban](https://soroban.stellar.org) — Stellar’s smart contract platform.
+- Written in Rust for speed, security, and Web3-native contract behavior.
+
+---
+
+## 🤝 Contributing
+
+This project is open to contributions! Feel free to fork, improve, or suggest features—especially as we integrate the **dispute resolution system**.
+
+---
